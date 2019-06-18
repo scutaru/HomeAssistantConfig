@@ -32,3 +32,16 @@ zha:
   usb_path: /dev/ttyAMA0
   database_path: /config/zigbee.db
   baudrate: 57600
+
+telegram_bot:
+  - platform: polling
+    api_key: !secret telegram_bot_api_key
+    allowed_chat_ids:
+      - !secret telegram_bot_main_chat_id
+
+notify:
+  - name: telegram_notifier
+    platform: telegram
+    chat_id: !secret telegram_bot_main_chat_id
+
+
