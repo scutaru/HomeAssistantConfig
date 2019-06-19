@@ -1,3 +1,6 @@
+homeassistant:
+  name: Home
+  time_zone: Europe/Bucharest
 
 # Configure a default setup of Home Assistant (frontend, api, etc)
 default_config:
@@ -16,7 +19,7 @@ tts:
   - platform: google_translate
 
 group: !include groups.yaml
-automation: !include automations.yaml
+automation: !include_dir_merge_named automation/
 script: !include scripts.yaml
 zone: !include zones.yaml
 
@@ -24,10 +27,10 @@ logger:
   default: warn
   logs:
     homeassistant.components.zha: debug
-    bellows.ezsp: debug
-    bellows.uart: debug
-    zigpy.zdo: debug
-    zigpy.application: debug
+    bellows.ezsp: info
+    bellows.uart: info
+    zigpy.zdo: info
+    zigpy.application: info
 
 zha:
   usb_path: /dev/ttyAMA0

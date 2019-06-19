@@ -2,16 +2,19 @@
     latitude: !secret lat_school
     longitude: !secret long_school
     radius: 50
+    time_zone: Europe/Bucharest
     icon: mdi:school
 
   - name: Home
     latitude: !secret lat_home
     longitude: !secret long_home
     radius: 50
+    time_zone: Europe/Bucharest
     icon: mdi:account-multiple
 
   - name: Socri
     latitude: !secret lat_socri
     longitude: !secret long_socri
     radius: 50
+    time_zone: Europe/Bucharest
     icon: mdi:account-multiple
