@@ -2,6 +2,8 @@ homeassistant:
   name: Home
   time_zone: Europe/Bucharest
 
+discovery:
+
 # Configure a default setup of Home Assistant (frontend, api, etc)
 default_config:
 
@@ -16,7 +18,7 @@ sensor:
 
 # Text to speech
 tts:
-  - platform: google_translate
+  - platform: google
 
 group: !include groups.yaml
 automation: !include_dir_merge_named automation/
@@ -24,13 +26,14 @@ script: !include scripts.yaml
 zone: !include zones.yaml
 
 logger:
-  default: warn
+  default: info
   logs:
     homeassistant.components.zha: debug
-    bellows.ezsp: info
-    bellows.uart: info
-    zigpy.zdo: info
-    zigpy.application: info
+    homeassistant.components.mqtt: debug
+    bellows.ezsp: debug
+    bellows.uart: debug
+    zigpy.zdo: debug
+    zigpy.application: debug
 
 zha:
   usb_path: /dev/ttyAMA0
@@ -48,4 +51,8 @@ notify:
     platform: telegram
     chat_id: !secret ionut_telegram_chat_id
 
-
+mqtt:
+  broker: 192.168.1.36
+  port: 1883
+  username: mqtt
+  password: !secret mqtt_pass

@@ -1,8 +1,8 @@
 - alias: normalHumiditySmallBathroom
   trigger:
     platform: numeric_state
-    entity_id: <TODO>
-    below: 60
+    entity_id: sensor_small_bathroom_humidity
+    below: 75
   action:
     service: notify.telegram
     data_template:
