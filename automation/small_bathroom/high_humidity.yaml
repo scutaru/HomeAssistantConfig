@@ -1,11 +1,11 @@
-- alias: highHumiditySmallBathroom
+  alias: highHumiditySmallBathroom
   trigger:
     platform: numeric_state
-    entity_id: sensor_small_bathroom_humidity
-    above: 75
+    entity_id: sensor.lumi_lumi_weather_02f7bf97_1_1029
+    above: 70
   action:
-    service: notify.telegram
+    service: notify.telegram_notifier
     data_template:
       title: "Umiditate prea mare in baia mica !"
-      message: "Ventilatorul a fost pornit."
+      message: "Ventilatorul ar trebui pornit."
 

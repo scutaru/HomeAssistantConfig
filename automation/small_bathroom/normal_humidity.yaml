@@ -1,11 +1,11 @@
-- alias: normalHumiditySmallBathroom
+  alias: normalHumiditySmallBathroom
   trigger:
     platform: numeric_state
-    entity_id: sensor_small_bathroom_humidity
-    below: 75
+    entity_id: sensor.lumi_lumi_weather_02f7bf97_1_1029
+    below: 67
   action:
     service: notify.telegram
     data_template:
       title: "Umiditatea in baia mica a ajuns la normal."
-      message: "Ventilatorul a fost oprit deoarece umiditatea este {{ states.sensor.small_bathroom.humidity.state }} %"
+      message: "Ventilatorul ar trebui oprit."
 
