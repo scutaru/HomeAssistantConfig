@@ -21,6 +21,7 @@ tts:
   - platform: google_translate
 
 light: !include_dir_list lights/
+group: !include_dir_list groups/
 automation: !include_dir_list automation/
 script: !include scripts.yaml
 zone: !include zones.yaml
