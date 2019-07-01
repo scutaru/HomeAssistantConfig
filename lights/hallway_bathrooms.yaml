@@ -1,0 +1,6 @@
+platform: group
+name: Hallway Bathrooms
+entities:
+  - light.hallway_small_bathroom
+  - light.hallway_large_bathroom
+

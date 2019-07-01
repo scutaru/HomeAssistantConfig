@@ -1,0 +1,9 @@
+living_room:
+  name: "Living Room"
+  entities:
+    - light.living_room
+hallway_bathrooms:
+  name: "Hallway bathrooms"
+  entities:
+    - light.hallway_bathrooms
+

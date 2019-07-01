@@ -1,0 +1,4 @@
+hallway_bathrooms:
+name: "Hallway bathrooms"
+entities:
+  - light.hallway_bathrooms
