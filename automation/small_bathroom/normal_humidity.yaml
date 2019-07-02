@@ -4,8 +4,13 @@
     entity_id: sensor.lumi_lumi_weather_02f7bf97_1_1029
     below: 67
   action:
-    service: notify.telegram_notifier
-    data_template:
-      title: "Umiditatea in baia mica a ajuns la normal."
-      message: "Ventilatorul ar trebui oprit."
+    - service: notify.telegram_notifier
+      data_template:
+        title: "Umiditatea in baia mica a ajuns la normal."
+        message: "Ventilatorul ar trebui oprit."
+    - service: tts.google_translate_say
+      entity_id: "all"
+      data:
+        message: "Umiditatea in baia mica a revenit la normal! Puteti opri ventilatorul !"
+
 

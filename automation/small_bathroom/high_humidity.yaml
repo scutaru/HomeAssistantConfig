@@ -4,8 +4,13 @@
     entity_id: sensor.lumi_lumi_weather_02f7bf97_1_1029
     above: 70
   action:
-    service: notify.telegram_notifier
-    data_template:
-      title: "Umiditate prea mare in baia mica !"
-      message: "Ventilatorul ar trebui pornit."
+    - service: notify.telegram_notifier
+      data_template:
+        title: "Umiditate prea mare in baia mica !"
+        message: "Ventilatorul ar trebui pornit."
+    - service: tts.google_translate_say
+      entity_id: "all"
+      data:
+        message: "Umiditatea in baia mica este prea mare ! Porniti ventilatorul !"
+    
 
