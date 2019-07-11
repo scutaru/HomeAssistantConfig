@@ -1,0 +1,8 @@
+tv_volume_up:
+  alias: "TV Volume Up"
+  sequence: 
+    - service: broadlink.send
+      data:
+        host: 192.168.1.185
+        packet: "JgBmAG04EAwQKRAMDw0QDRAMEA0PDRAMEA0QDBANEAwQKRAMDw0QDRAMEA0PDQ8NDw4QDA8qEQsQDRAMFQgPDRAMDw0PDg8NDw4PDRAMEA0PKRANDw0PDg8NEAwQDQ8NECkQDA8qEAANBQAA"
+
