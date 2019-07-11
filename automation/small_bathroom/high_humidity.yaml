@@ -11,6 +11,6 @@
     - service: tts.google_translate_say
       entity_id: "all"
       data:
-        message: "Umiditatea in baia mica este prea mare ! Porniti ventilatorul !"
+        message: "High humidity in the small bathroom ! Please turn on the fan !"
     
 

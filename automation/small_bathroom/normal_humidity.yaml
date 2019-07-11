@@ -11,6 +11,6 @@
     - service: tts.google_translate_say
       entity_id: "all"
       data:
-        message: "Umiditatea in baia mica a revenit la normal! Puteti opri ventilatorul !"
+        message: "The humidity in the small bathroom got back to normal. You can turn off the fan now."
 
 
