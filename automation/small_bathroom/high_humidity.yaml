@@ -9,8 +9,8 @@
         title: "Umiditate prea mare in baia mica !"
         message: "Ventilatorul ar trebui pornit."
     - service: tts.google_translate_say
-      entity_id: "all"
+      entity_id: "media_player.living_room_speaker"
       data:
-        message: "High humidity in the small bathroom ! Please turn on the fan !"
+        message: "There is high humidity in the small bathroom ! Please turn on the fan !"
     
 
