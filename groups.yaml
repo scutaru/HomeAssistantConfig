@@ -6,4 +6,7 @@ hallway_bathrooms:
   name: "Hallway bathrooms"
   entities:
     - light.hallway_bathrooms
-
+hallway_dressing:
+  name: "Hallway dressing"
+  entities:
+    - light.hallway_dressing
