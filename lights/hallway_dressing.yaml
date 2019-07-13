@@ -1,0 +1,4 @@
+platform: group
+name: Hallway Dressing
+entities:
+  - light.hallway_dressing
