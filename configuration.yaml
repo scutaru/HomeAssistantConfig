@@ -52,13 +52,14 @@ notify:
     platform: telegram
     chat_id: !secret ionut_telegram_chat_id
 
-mqtt:
-  broker: 192.168.1.36
-  port: 1883
-  username: mqtt
-  password: !secret mqtt_pass
-
 switch:
   - platform: broadlink
     host: 192.168.1.185
     mac: 'C8:F7:42:83:8D:22'
+
+mqtt:
+  broker: 192.168.1.36
+  port: 1883
+  username: mqtt_user
+  password: !secret mqtt_pass
+  
