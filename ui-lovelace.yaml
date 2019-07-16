@@ -2,14 +2,10 @@ views:
   - title: main
     icon: mdi:home-outline
     cards:
-      - type: glance
-        title: Lights Living Room
+      - type: entities
+        title: Zigbee
         entities:
-          - light.living_room
-  - title: Zigbee
-    type: entities
-    entities:
-      - entity: input_boolean.zigbee_permit_join
-      - entity: timer.zigbee_permit_join
-      - entity: sensor.bridge_state
-    show_header_toggle: false
+          - entity: input_boolean.zigbee_permit_join
+          - entity: timer.zigbee_permit_join
+          - entity: sensor.bridge_state
+        show_header_toggle: false
