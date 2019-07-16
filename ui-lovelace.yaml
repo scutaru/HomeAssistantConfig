@@ -9,3 +9,6 @@ views:
           - entity: timer.zigbee_permit_join
           - entity: sensor.bridge_state
         show_header_toggle: false
+      - type: light
+        name: Living Room
+        entity: group.living_room
