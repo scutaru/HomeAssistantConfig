@@ -15,6 +15,10 @@ default_config:
 sensor:
   # Weather prediction
   - platform: yr
+  - platform: mqtt
+    name: Bridge state
+    state_topic: "zigbee2mqtt/bridge/state"
+    icon: mdi:router-wireless
 
 # Text to speech
 tts:
@@ -62,4 +66,15 @@ mqtt:
   port: 1883
   username: mqtt_user
   password: !secret mqtt_pass
-  
+
+input_boolean:
+  zigbee_permit_join:
+    name: Allow devices to join
+    initial: off
+    icon: mdi:cellphone-wireless
+
+timer:
+  zigbee_permit_join:
+    name: Time remaining
+    duration: 600 # Updated this to the number of seconds you wish
+
