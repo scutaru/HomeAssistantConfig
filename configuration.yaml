@@ -4,8 +4,8 @@ homeassistant:
 
 discovery:
 
-lovelace:
-  mode: yaml
+#lovelace:
+#  mode: yaml
   
 # Configure a default setup of Home Assistant (frontend, api, etc)
 default_config:
@@ -81,3 +81,8 @@ timer:
     name: Time remaining
     duration: 600 # Updated this to the number of seconds you wish
 
+camera:
+  - platform: foscam
+    ip: !secret foscam_ip
+    username: !secret foscam_username
+    password: !secret foscam_password
