@@ -1,0 +1,8 @@
+tv_blue:
+  alias: "TV Blue"
+  sequence: 
+    - service: broadlink.send
+      data:
+        host: 192.168.1.185
+        packet: "JgCKADgJKUIIFAgvChMKFAlpCmcMTgcVChILFwcRChMIFQovCxcILgosDTEIMgkTBqYLigkxCYcIagkxDAAJqyUQNFoLMAsRCxMJMgkRDBUFFQoSCxMLFAQWCy4JNQcVChAJGQYSChIMMAouChUJLwoWCk4ITggxBTQIMwkvCTEJTQtOCRUIMQhrCQANBQAAAAAAAAAAAAAAAAAA"
+

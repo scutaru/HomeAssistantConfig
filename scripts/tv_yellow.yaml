@@ -1,0 +1,8 @@
+tv_yellow:
+  alias: "TV Yellow"
+  sequence: 
+    - service: broadlink.send
+      data:
+        host: 192.168.1.185
+        packet: "JgC+ADELCwccQAoSCjIIFAsSChQMEggTChQGFwgvCjENMAcRCxMKLgkWCBMMFQkSCmkJFQkuCxUIEwUZCREMEAwzBxMKFggvCmsJLgwyBRULFAltBzEKLwkACTNzOQwUDSoNEgsSCRIMEAwSDBEMEAwQDg8MEgsTCi4MEQ0RDBELEQsTChIIFQsSDBMHMAwQDBUIFAkRDBEKEgwTChEMEgswCxEMEAsvDC4NLgsSCxQILwwQDBMJMAsvCy4MLg0ADQUAAAAAAAAAAAAA"
+
