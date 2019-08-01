@@ -1,4 +1,4 @@
-tv_TV:
+tv_tv:
   alias: "TV TV"
   sequence: 
     - service: broadlink.send

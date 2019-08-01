@@ -1,4 +1,4 @@
-tv_lastView:
+tv_last_view:
   alias: "TV Last View"
   sequence: 
     - service: broadlink.send
