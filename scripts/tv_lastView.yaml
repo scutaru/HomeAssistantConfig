@@ -1,0 +1,8 @@
+tv_lastView:
+  alias: "TV Last View"
+  sequence: 
+    - service: broadlink.send
+      data:
+        host: 192.168.1.185
+        packet: "JgBmAG07Dg8NLQ4PDRANEA0PDg8NEA0QDRANDw4PDRANLQ0QDRANEA0PDg8NEA0QDRANDw8rDg8ODw0QDg8NEA0PDg8NEA0tDS0NLQ8ODS0OLA4PDg8NLQ4sDi0NDw4sDi0ODg4tDQANBQAA"
+
