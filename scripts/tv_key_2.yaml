@@ -1,0 +1,8 @@
+tv_key_2:
+  alias: "TV Key 2"
+  sequence: 
+    - service: broadlink.send
+      data:
+        host: 192.168.1.185
+        packet: "JgBmAGs8DBINLA0QDBEMEA0QDRAMEQ0QDRAMEAwRDBEMLgwQDREMEA0QDBENEAwRDBAODwwuDRAMEQwQDRENDwwRDBEMEQwtDRINDg0QDS0ODwwRDBANLQ4QDBENDwwuDQ8NEQwtDQANBQAA"
+

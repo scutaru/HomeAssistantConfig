@@ -1,0 +1,8 @@
+tv_key_8:
+  alias: "TV Key 8"
+  sequence: 
+    - service: broadlink.send
+      data:
+        host: 192.168.1.185
+        packet: "JgBmAG08DBEMLQ4PDg8NEAwRDBEMEQ0PDRAMEA0QDRAOLQwRDBANEAwRDBEMEQ4ODRELEA0tDREMEQ0PDRAMEQwRDBENEA0tDSwNLQ0RDC4MEQwRDBANLQ0tDi0NEA0sDREMEAwuDgANBQAA"
+
