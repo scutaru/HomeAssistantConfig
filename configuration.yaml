@@ -72,9 +72,7 @@ switch:
 
 mqtt:
   broker: homeassistant
-  port: 1883
-  username: mqtt_user
-  password: !secret mqtt_pass
+  discovery: true
 
 input_boolean:
   zigbee_permit_join:
