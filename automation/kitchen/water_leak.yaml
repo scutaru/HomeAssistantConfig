@@ -2,8 +2,8 @@
   trigger:
     platform: state
     entity_id: binary_sensor.waterleak_kitchen_sink
-    from: off
-    to: on
+    from: 'off'
+    to: 'on'
   action:
     - service: notify.telegram_notifier
       data_template:
