@@ -23,6 +23,12 @@ sensor:
     state_topic: "zigbee2mqtt/bridge/state"
     icon: mdi:router-wireless
 
+binary_sensor:
+  - platform: ping
+    host: 192.168.1.126
+    scan_interval: 30
+    name: Panasonic_tv_status
+
 # Text to speech
 tts:
   - platform: google_translate

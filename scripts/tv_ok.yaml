@@ -1,0 +1,8 @@
+tv_ok:
+  alias: "TV OK"
+  sequence: 
+    - service: broadlink.send
+      data:
+        host: 192.168.1.185
+        packet: ""
+
