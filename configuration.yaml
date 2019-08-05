@@ -10,18 +10,6 @@ discovery:
 # Configure a default setup of Home Assistant (frontend, api, etc)
 default_config:
 frontend: !include frontend.yaml
-# Uncomment this if you are using SSL/TLS, running in Docker container, etc.
-# http:
-#   base_url: example.duckdns.org:8123
-
-# Sensors
-sensor:
-  # Weather prediction
-  - platform: yr
-  - platform: mqtt
-    name: Bridge state
-    state_topic: "zigbee2mqtt/bridge/state"
-    icon: mdi:router-wireless
 
 binary_sensor:
   - platform: ping
@@ -33,6 +21,7 @@ binary_sensor:
 tts:
   - platform: google_translate
 
+sensor: !include_dir_list sensors/
 light: !include_dir_list lights/
 group: !include groups.yaml
 automation: !include_dir_list automation/
