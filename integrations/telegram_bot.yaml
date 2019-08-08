@@ -1,0 +1,1 @@
+telegram_bot: !include_dir_merge_named ../telegram

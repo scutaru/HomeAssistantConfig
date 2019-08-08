@@ -1,0 +1,7 @@
+homeassistant:
+  name: Home
+  time_zone: Europe/Bucharest
+  latitude: 26.045364
+  longitude: 44.422803
+  elevation: 88
+  unit_system: metric

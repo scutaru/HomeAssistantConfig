@@ -1,0 +1,4 @@
+hallway_dressing:
+  name: "Hallway dressing"
+  entities:
+    - light.hallway_dressing
