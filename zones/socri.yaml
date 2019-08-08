@@ -1,6 +1,6 @@
-- name: Socri
-  latitude: !secret lat_socri
-  longitude: !secret long_socri
-  radius: 50
-  time_zone: Europe/Bucharest
-  icon: mdi:account-multiple
+name: Socri
+latitude: !secret lat_socri
+longitude: !secret long_socri
+radius: 50
+time_zone: Europe/Bucharest
+icon: mdi:account-multiple

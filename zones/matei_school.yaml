@@ -1,6 +1,6 @@
-- name: Matei's School
-  latitude: !secret lat_school
-  longitude: !secret long_school
-  radius: 50
-  time_zone: Europe/Bucharest
-  icon: mdi:school
+name: Matei's School
+latitude: !secret lat_school
+longitude: !secret long_school
+radius: 50
+time_zone: Europe/Bucharest
+icon: mdi:school

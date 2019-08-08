@@ -1,6 +1,6 @@
-- name: Home
-  latitude: !secret lat_home
-  longitude: !secret long_home
-  radius: 50
-  time_zone: Europe/Bucharest
-  icon: mdi:account-multiple
+name: Home
+latitude: !secret lat_home
+longitude: !secret long_home
+radius: 50
+time_zone: Europe/Bucharest
+icon: mdi:account-multiple
