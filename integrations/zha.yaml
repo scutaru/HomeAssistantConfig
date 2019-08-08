@@ -1,3 +1,1 @@
-usb_path: /dev/ttyAMA0
-database_path: /config/zigbee.db
-baudrate: 57600
+zha: !include_dir_merge_named ../zha
