@@ -6,12 +6,15 @@
 #
 # https://www.home-assistant.io/components/binary_sensor.workday/
 #
-platform: workday
-name: workday
-country: RO
-workdays:
-  - mon
-  - tue
-  - wed
-  - thu
-  - fri
+
+#Commented out as Romania is not supported yet
+
+#platform: workday
+#name: workday
+#country: RO
+#workdays:
+#  - mon
+#  - tue
+#  - wed
+#  - thu
+#  - fri
