@@ -13,3 +13,4 @@ known_devices.yaml
 .HA_VERSION
 *.log
 *.db
+home-assistant_v2.db*
