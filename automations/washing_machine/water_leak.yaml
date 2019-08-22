@@ -1,0 +1,17 @@
+alias: waterLeakWashingMachine
+trigger:
+  platform: state
+  entity_id: binary_sensor.water_leak_laundry_machine
+  from: 'off'
+  to: 'on'
+action:
+  - service: notify.telegram_notifier
+    data_template:
+      title: "Scurgere de apa la masina de spalat !"
+      message: "Verifica de ce este apa sub masina de spalat"
+  - service: tts.google_translate_say
+    entity_id: "media_player.living_room_speaker"
+    data:
+      message: "There is water under the laundry washing machine !"
+    
+
