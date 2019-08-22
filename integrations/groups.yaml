@@ -1,1 +1,1 @@
-group: !include_dir_list ../entities/groups
+group: !include_dir_named ../entities/groups

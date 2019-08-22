@@ -1,5 +1,5 @@
 #Binary sensor that checks if my tv is "on" by pinging the chromecast device (or the tv)
-#platform: ping
-#host: !secret tv_ip
-#scan_interval: 5
-#name: Panasonic_tv_status
+- platform: ping
+  host: !secret tv_ip
+  scan_interval: 5
+  name: Panasonic_tv_status
