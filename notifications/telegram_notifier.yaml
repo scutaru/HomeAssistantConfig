@@ -1,3 +1,0 @@
-- name: telegram_notifier
-  platform: telegram
-  chat_id: !secret ionut_telegram_chat_id

@@ -1,1 +1,6 @@
-notify: !include_dir_merge_named ../notifications
+notify:
+  - name: telegram_notifier
+    platform: telegram
+    chat_id: !secret ionut_telegram_chat_id
+
+ 
