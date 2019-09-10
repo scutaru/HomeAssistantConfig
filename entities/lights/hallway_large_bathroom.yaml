@@ -1,0 +1,7 @@
+platform: group
+name: Large Bathroom
+entities:
+  - light.large_bathroom_ceiling_1
+  - light.large_bathroom_ceiling_2
+  - light.large_bathroom_ceiling_3
+

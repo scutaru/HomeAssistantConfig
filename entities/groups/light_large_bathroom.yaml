@@ -1,0 +1,3 @@
+name: "Large Bathroom"
+entities:
+  - light.large_bathroom
