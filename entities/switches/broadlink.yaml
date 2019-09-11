@@ -1,5 +1,5 @@
 platform: broadlink
-host: 192.168.1.185
+host: !secret broadlink_ip_address
 mac: !secret broadlink_mac_address
 timeout: 15
 switches:
