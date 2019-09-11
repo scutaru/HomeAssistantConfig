@@ -1,8 +1,9 @@
 alias: highHumiditySmallBathroom
-condition:
-  - condition: numeric_state
+trigger:
+  - platform: numeric_state
     entity_id: sensor.small_bathroom_humidity
     above: 70
+condition:
   - condition: time
     after: '7:00:00'
     before: '22:00:00'  
