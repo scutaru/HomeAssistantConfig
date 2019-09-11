@@ -1,2 +1,8 @@
-platform: kodi
-host: !secret kodi_ip_address
+- platform: kodi
+  name: kodi
+  host: !secret kodi_ip_address
+  turn_off_action:
+    service: kodi.call_method
+    data:
+      entity_id: media_player.kodi
+      method: System.Reboot
