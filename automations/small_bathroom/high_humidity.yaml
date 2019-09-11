@@ -1,8 +1,11 @@
 alias: highHumiditySmallBathroom
-trigger:
-  platform: numeric_state
-  entity_id: sensor.small_bathroom_humidity
-  above: 70
+condition:
+  - condition: numeric_state
+    entity_id: sensor.small_bathroom_humidity
+    above: 70
+  - condition: time
+    after: '7:00:00'
+    before: '22:00:00'  
 action:
   - service: notify.telegram_notifier
     data_template:
