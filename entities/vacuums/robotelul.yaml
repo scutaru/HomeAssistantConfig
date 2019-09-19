@@ -1,0 +1,10 @@
+---
+#
+# Integrates our Xiaomi Roborock Gen1 into Home Assistant.
+#
+# https://www.home-assistant.io/components/vacuum.xiaomi_miio/
+#
+platform: xiaomi_miio
+name: robotelul
+host: !secret robotelul_host
+token: !secret robotelul_token
