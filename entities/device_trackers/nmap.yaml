@@ -1,0 +1,3 @@
+platform: nmap_tracker
+hosts: !secret family_devices_ips
+home_interval: 10
