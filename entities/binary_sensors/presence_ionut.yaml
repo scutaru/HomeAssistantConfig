@@ -1,0 +1,10 @@
+platform: bayesian
+prior: 0.5
+  name: 'Ionut Presence'
+  probability_threshold: 0.9
+  observations:
+    - entity_id: device_tracker.telefon_ionut
+      prob_given_true: 0.9
+      prob_given_false: 0.1
+      platform: state
+      to_state: 'home'
