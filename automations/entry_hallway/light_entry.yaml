@@ -1,13 +1,11 @@
----
-id: 'turn_off_entry_hallway_light_after_x_minutes'
 alias: Turns off the light in the entry hallway after x minutes
 hide_entity: true
 trigger:
   - platform: state
-    entity_id: light.hallway_entrance
+    entity_id: 
+      - light.hallway_entrance
     to: 'on'
-    for:
-      minutes: 1
+    for: '00:01:00'
 action:
   - service: light.turn_off
     data_template:
